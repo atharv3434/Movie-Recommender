@@ -1,4 +1,5 @@
 """Charts from the saved metrics.json."""
+
 import json
 import sys
 from pathlib import Path
