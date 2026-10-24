@@ -1,4 +1,5 @@
-"""Lightweight, Spark-free serving layer built from exported factors (numpy).
+"""
+Lightweight, Spark-free serving layer built from exported factors (numpy).
 
 Handles three situations a production recommender must:
   1. known user          -> dot product of learned user and item factors
