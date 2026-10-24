@@ -1,0 +1,81 @@
+{
+  "rmse": {
+    "global_mean": 1.0788753847286128,
+    "item_mean_shrunk": 0.9716465685757211,
+    "als": 0.6532314081493792
+  },
+  "test_ranking_at_10": {
+    "top_rated": {
+      "precisionAtK": 0.014479830148619961,
+      "recallAtK": 0.047094935642845594,
+      "ndcgAtK": 0.03361600618940583,
+      "users_evaluated": 2355,
+      "genre_alignment": 0.18546666666666667
+    },
+    "most_rated": {
+      "precisionAtK": 0.0588535031847134,
+      "recallAtK": 0.22676138811674668,
+      "ndcgAtK": 0.18301837071617996,
+      "users_evaluated": 2355,
+      "genre_alignment": 0.18713333333333335
+    },
+    "als_pure": {
+      "precisionAtK": 0.009256900212314227,
+      "recallAtK": 0.03475501228590453,
+      "ndcgAtK": 0.01949444915108493,
+      "users_evaluated": 2355,
+      "genre_alignment": 0.4527333333333333
+    },
+    "als_hybrid": {
+      "precisionAtK": 0.06861995753715495,
+      "recallAtK": 0.26512063474107317,
+      "ndcgAtK": 0.21376365423934246,
+      "users_evaluated": 2355,
+      "genre_alignment": 0.3072
+    }
+  },
+  "lambda_sweep_test": {
+    "0.0": {
+      "ndcgAtK": 0.01949444915108493,
+      "genre_alignment": 0.4527333333333333
+    },
+    "0.2": {
+      "ndcgAtK": 0.09237617305165752,
+      "genre_alignment": 0.4589666666666667
+    },
+    "0.4": {
+      "ndcgAtK": 0.15490845007310547,
+      "genre_alignment": 0.45016666666666666
+    },
+    "0.6": {
+      "ndcgAtK": 0.18731244440732864,
+      "genre_alignment": 0.41856666666666664
+    },
+    "0.8": {
+      "ndcgAtK": 0.203158998298752,
+      "genre_alignment": 0.39053333333333334
+    },
+    "1.0": {
+      "ndcgAtK": 0.21010483225123933,
+      "genre_alignment": 0.3666333333333333
+    },
+    "1.5": {
+      "ndcgAtK": 0.21376365423934246,
+      "genre_alignment": 0.3072
+    }
+  },
+  "validation_ndcg_by_lambda": {
+    "0.0": 0.015169450372472788,
+    "0.2": 0.07121696628548801,
+    "0.4": 0.12797907304127723,
+    "0.6": 0.16113803330491358,
+    "0.8": 0.17826285330557454,
+    "1.0": 0.1850652636146746,
+    "1.5": 0.1886712869281022
+  },
+  "chosen_lambda": 1.5,
+  "best_params": {
+    "rank": 4,
+    "regParam": 0.1
+  }
+}
